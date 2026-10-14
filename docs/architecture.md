@@ -1,11 +1,11 @@
 # MFGOS: System Architecture & Design Specification
 
 ## 1. Architectural Philosophy: The Modular Monolith
-To deliver a high-integrity, production-grade manufacturing execution system within the academic timeframe, MFGOS adopts a **Modular Monolith** architecture rather than a distributed microservices network. 
+To deliver a high-integrity, production-grade manufacturing execution system with strong transactional consistency, MFGOS adopts a **Modular Monolith** architecture rather than a distributed microservices network. 
 
 ### Why Modular Monolith for MFGOS?
 - **Transactional Consistency:** Manufacturing relies heavily on ACID guarantees. When raw materials are consumed and work-in-progress is credited, cross-table relational constraints and atomic transactions eliminate the distributed split-brain failure modes common in microservices.
-- **Lower Operational Overhead:** Simplifies deployment, debugging, and local evaluation for university project defense.
+- **Lower Operational Overhead:** Simplifies deployment, operational reliability, and end-to-end debugging across plant environments.
 - **Clear Module Boundaries:** Domain boundaries (Auth, Master Data, Inventory, Workflows, Quality) are strictly separated by directories and interfaces, allowing easy microservice extraction if future enterprise scaling demands it.
 
 ```mermaid

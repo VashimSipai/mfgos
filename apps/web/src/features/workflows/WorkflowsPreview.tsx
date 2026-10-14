@@ -76,7 +76,7 @@ export const WorkflowsPreview: React.FC = () => {
         </button>
       </div>
 
-      {/* Industry Workflow Selector (The Viva Proof) */}
+      {/* Industry Workflow Selector (Dynamic Adaptability Showcase) */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(360px, 1fr))', gap: 16, marginBottom: 28 }}>
         {workflows.map(wf => {
           const isSelected = wf.id === activeWorkflow.id;

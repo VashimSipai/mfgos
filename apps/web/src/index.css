@@ -347,23 +347,23 @@ body {
   background: rgba(0, 0, 0, 0.2);
 }
 
-.academic-badge {
+.system-tier-badge {
   padding: 10px 12px;
   background: rgba(255, 255, 255, 0.02);
-  border: 1px dashed var(--border-subtle);
+  border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
 
-.academic-badge-title {
+.system-tier-title {
   font-size: 0.75rem;
   font-weight: 700;
   color: var(--text-main);
 }
 
-.academic-badge-desc {
+.system-tier-desc {
   font-size: 0.6875rem;
   color: var(--text-dim);
 }

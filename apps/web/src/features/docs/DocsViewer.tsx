@@ -18,14 +18,14 @@ export const DocsViewer: React.FC = () => {
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 24 }}>
         <div>
           <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-            <span className="badge badge-purple">Academic Documentation Package</span>
-            <span style={{ fontSize: '0.8125rem', color: 'var(--text-dim)' }}>IEEE-Compliant Major Project</span>
+            <span className="badge badge-purple">System Technical Documentation</span>
+            <span style={{ fontSize: '0.8125rem', color: 'var(--text-dim)' }}>IEEE-Compliant Specifications</span>
           </div>
           <h1 style={{ fontSize: '1.75rem', fontWeight: 800, color: '#fff', marginTop: 6 }}>
-            MFGOS Engineering Blueprint & Viva Documentation
+            MFGOS Architecture & Engineering Blueprint
           </h1>
           <p style={{ color: 'var(--text-muted)', fontSize: '0.875rem', marginTop: 4 }}>
-            Formal specifications, architectural models, and 16-week developmental milestones for examination.
+            Formal technical specifications, relational models, and milestone deliverables.
           </p>
         </div>
 
@@ -48,7 +48,7 @@ export const DocsViewer: React.FC = () => {
           onClick={() => setSelectedDoc('roadmap')}
         >
           <Map size={16} />
-          <span>16-Week Roadmap & Weekly Summaries</span>
+          <span>16-Week Engineering Roadmap</span>
         </button>
 
         <button 
@@ -88,7 +88,7 @@ export const DocsViewer: React.FC = () => {
           onClick={() => setSelectedDoc('testing')}
         >
           <CheckSquare size={16} />
-          <span>Testing Strategy & Viva Script</span>
+          <span>Testing Strategy & Verification</span>
         </button>
       </div>
 
@@ -100,21 +100,21 @@ export const DocsViewer: React.FC = () => {
               <h2 style={{ fontSize: '1.35rem', fontWeight: 800, color: '#fff' }}>
                 16-Week Master Engineering Development Roadmap
               </h2>
-              <span className="badge badge-emerald">Weeks 1-4 Delivered</span>
+              <span className="badge badge-emerald">Phase 1 Operational</span>
             </div>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
-              {/* Month 1 */}
+              {/* Phase 1 */}
               <div style={{ background: 'rgba(56, 189, 248, 0.05)', border: '1px solid rgba(56, 189, 248, 0.25)', borderRadius: 'var(--radius-lg)', padding: 20 }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12 }}>
                   <h3 style={{ fontSize: '1.125rem', fontWeight: 700, color: 'var(--primary)' }}>
-                    Month 1 (Weeks 01 - 04): Foundation, Security, Master Data & Stock Ledger
+                    Phase 1 (Weeks 01 - 04): Foundation, Security, Master Data & Stock Ledger
                   </h3>
                   <span className="badge badge-emerald">COMPLETED</span>
                 </div>
                 <ul style={{ paddingLeft: 20, display: 'flex', flexDirection: 'column', gap: 10, color: 'var(--text-main)', fontSize: '0.875rem' }}>
                   <li>
-                    <strong>Week 01 — Specifications & Architecture:</strong> IEEE SRS, Monorepo layout, PostgreSQL schema design, and GitHub repository configuration.
+                    <strong>Week 01 — Specifications & Architecture:</strong> IEEE SRS, Monorepo layout, PostgreSQL schema design, and Git repository configuration.
                     <br />
                     <em>Crisp Summary: Finalized all foundational engineering specs and structured monorepo workspace for web and mobile terminals.</em>
                   </li>
@@ -136,11 +136,11 @@ export const DocsViewer: React.FC = () => {
                 </ul>
               </div>
 
-              {/* Month 2 */}
+              {/* Phase 2 */}
               <div style={{ background: 'rgba(255, 255, 255, 0.02)', border: '1px solid var(--border-subtle)', borderRadius: 'var(--radius-lg)', padding: 20 }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12 }}>
                   <h3 style={{ fontSize: '1.125rem', fontWeight: 700, color: '#fff' }}>
-                    Month 2 (Weeks 05 - 08): Manufacturing Core, BOM, Routing & WIP Orders
+                    Phase 2 (Weeks 05 - 08): Manufacturing Core, BOM, Routing & WIP Orders
                   </h3>
                   <span className="badge badge-amber">SCHEDULED</span>
                 </div>
@@ -152,11 +152,11 @@ export const DocsViewer: React.FC = () => {
                 </ul>
               </div>
 
-              {/* Month 3 */}
+              {/* Phase 3 */}
               <div style={{ background: 'rgba(255, 255, 255, 0.02)', border: '1px solid var(--border-subtle)', borderRadius: 'var(--radius-lg)', padding: 20 }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12 }}>
                   <h3 style={{ fontSize: '1.125rem', fontWeight: 700, color: '#fff' }}>
-                    Month 3 (Weeks 09 - 12): Configurable Workflow Engine & Flutter Mobile Offline Sync
+                    Phase 3 (Weeks 09 - 12): Configurable Workflow Engine & Flutter Mobile Offline Sync
                   </h3>
                   <span className="badge badge-cyan">SCHEDULED</span>
                 </div>
@@ -168,11 +168,11 @@ export const DocsViewer: React.FC = () => {
                 </ul>
               </div>
 
-              {/* Month 4 */}
+              {/* Phase 4 */}
               <div style={{ background: 'rgba(255, 255, 255, 0.02)', border: '1px solid var(--border-subtle)', borderRadius: 'var(--radius-lg)', padding: 20 }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12 }}>
                   <h3 style={{ fontSize: '1.125rem', fontWeight: 700, color: '#fff' }}>
-                    Month 4 (Weeks 13 - 16): Executive Analytics, Testing, Hardening & Viva Defense
+                    Phase 4 (Weeks 13 - 16): Executive Analytics, Hardening & Production GA
                   </h3>
                   <span className="badge badge-purple">SCHEDULED</span>
                 </div>
@@ -180,7 +180,7 @@ export const DocsViewer: React.FC = () => {
                   <li><strong>Week 13:</strong> Executive analytics dashboard with dynamic Recharts for throughput, scrap rates, and stock turnover.</li>
                   <li><strong>Week 14:</strong> Grounded AI operational insights for scrap anomaly detection and stockout burn rate warnings.</li>
                   <li><strong>Week 15:</strong> Stress testing, RLS security audit, concurrency testing, and sub-second performance optimization.</li>
-                  <li><strong>Week 16:</strong> Cloud deployment (Vercel + Supabase), comprehensive 100+ page project dissertation, and viva presentation deck.</li>
+                  <li><strong>Week 16:</strong> Production deployment (Vercel + Supabase), comprehensive documentation package, and release build verification.</li>
                 </ul>
               </div>
             </div>
@@ -190,7 +190,7 @@ export const DocsViewer: React.FC = () => {
         {selectedDoc === 'problem' && (
           <div>
             <h2 style={{ fontSize: '1.35rem', fontWeight: 800, color: '#fff', marginBottom: 16 }}>
-              Crisp Problem Statement & Core Value Proposition
+              Problem Statement & Core Value Proposition
             </h2>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 16, color: 'var(--text-main)', fontSize: '0.9375rem' }}>
               <p>
@@ -302,14 +302,14 @@ PostgreSQL 15+ Core:
         {selectedDoc === 'testing' && (
           <div>
             <h2 style={{ fontSize: '1.35rem', fontWeight: 800, color: '#fff', marginBottom: 16 }}>
-              Testing Strategy & Academic Viva Defense Script
+              Testing Strategy & Operational Verification
             </h2>
             <p style={{ color: 'var(--text-muted)', marginBottom: 16 }}>
               Full verification procedures documented in <code className="sku-tag">docs/testing-strategy.md</code>.
             </p>
             <div style={{ background: 'rgba(16, 185, 129, 0.05)', border: '1px solid rgba(16, 185, 129, 0.25)', borderRadius: 'var(--radius-md)', padding: 16 }}>
               <h4 style={{ color: 'var(--accent-emerald)', fontWeight: 700, marginBottom: 8 }}>
-                The 10-Step Live Viva Demonstration Flow:
+                The 10-Step Operational Verification Flow:
               </h4>
               <ol style={{ paddingLeft: 20, display: 'flex', flexDirection: 'column', gap: 8, fontSize: '0.8125rem', color: 'var(--text-main)' }}>
                 <li>Log in as Super Admin; showcase multi-plant and organization switcher.</li>

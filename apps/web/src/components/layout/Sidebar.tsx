@@ -5,8 +5,7 @@ import {
   Database, 
   GitFork, 
   FileText, 
-  Cpu, 
-  GraduationCap
+  Cpu
 } from 'lucide-react';
 
 export type NavigationTab = 'dashboard' | 'inventory' | 'master-data' | 'workflows' | 'docs';
@@ -36,7 +35,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ activeTab, onTabChange }) => {
 
       {/* Navigation Menu */}
       <nav className="sidebar-nav">
-        <div className="nav-section-label">Core Operations</div>
+        <div className="nav-section-label">Operations</div>
         
         <button 
           className={`nav-link-btn ${activeTab === 'dashboard' ? 'active' : ''}`}
@@ -62,7 +61,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ activeTab, onTabChange }) => {
           <span>Master Data (MDM)</span>
         </button>
 
-        <div className="nav-section-label">Configurability Engine</div>
+        <div className="nav-section-label">Configurability</div>
 
         <button 
           className={`nav-link-btn ${activeTab === 'workflows' ? 'active' : ''}`}
@@ -72,29 +71,29 @@ export const Sidebar: React.FC<SidebarProps> = ({ activeTab, onTabChange }) => {
           <span>Configurable Workflows</span>
         </button>
 
-        <div className="nav-section-label">Engineering Docs</div>
+        <div className="nav-section-label">Documentation</div>
 
         <button 
           className={`nav-link-btn ${activeTab === 'docs' ? 'active' : ''}`}
           onClick={() => onTabChange('docs')}
         >
           <FileText size={18} />
-          <span>Major Project Blueprint</span>
+          <span>System Specifications</span>
         </button>
       </nav>
 
-      {/* Academic Defense Footer */}
+      {/* System Status Footer */}
       <div className="sidebar-footer">
-        <div className="academic-badge">
+        <div className="system-tier-badge">
           <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
-            <GraduationCap size={14} style={{ color: 'var(--primary)' }} />
-            <span className="academic-badge-title">Final-Year B.Tech</span>
+            <Cpu size={14} style={{ color: 'var(--primary)' }} />
+            <span className="system-tier-title">MFGOS Core</span>
           </div>
-          <span className="academic-badge-desc">
-            Computer Engineering Major Project
+          <span className="system-tier-desc">
+            Configurable Manufacturing Platform
           </span>
-          <span style={{ fontSize: '0.625rem', color: 'var(--primary)', fontWeight: 600 }}>
-            Month 1 (Weeks 1-4) Delivered
+          <span style={{ fontSize: '0.625rem', color: 'var(--accent-emerald)', fontWeight: 600, marginTop: 2 }}>
+            ● Engine v1.0.0 Online
           </span>
         </div>
       </div>

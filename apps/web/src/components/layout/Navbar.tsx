@@ -111,7 +111,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           <ChevronDown size={14} style={{ color: 'var(--primary)' }} />
         </div>
 
-        {/* Quick Reset Button for Viva Demo */}
+        {/* Quick Reset Button for Demonstration Data */}
         <button 
           className="btn btn-secondary btn-sm"
           onClick={onResetData}

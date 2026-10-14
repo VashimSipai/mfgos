@@ -1,7 +1,6 @@
 # Software Requirements Specification (SRS)
 ## For MFGOS: Configurable Manufacturing Operations System
 **Document Version:** 1.0.0  
-**Project Type:** Final-Year B.Tech Computer Engineering Major Project  
 **Standard:** IEEE Std 830-1998 Compliant  
 
 ---
@@ -9,7 +8,7 @@
 ## 1. Introduction
 
 ### 1.1 Purpose
-This Software Requirements Specification (SRS) details the functional and non-functional specifications for **MFGOS (Configurable Manufacturing Operations System)**. It establishes the technical contract between stakeholders, academic evaluators, and the development team for system implementation, validation, and evaluation.
+This Software Requirements Specification (SRS) details the functional and non-functional specifications for **MFGOS (Configurable Manufacturing Operations System)**. It establishes the technical contract between stakeholders, product owners, and the engineering development team for system implementation, validation, and evaluation.
 
 ### 1.2 Scope of the System
 MFGOS is a multi-tenant, cloud-backed manufacturing execution and management system designed to eliminate software rigidity across diverse discrete manufacturing sectors (e.g., precision engineering, furniture, textiles). The platform integrates:

@@ -1,6 +1,6 @@
 # MFGOS: 16-Week Engineering Development Roadmap
 
-This document serves as the master tracking specification for the 4-month (16-week) lifecycle of **MFGOS (Configurable Manufacturing Operations System)**. Every week outlines concrete objectives, tasks, deliverables, and a short summary of accomplishments.
+This document serves as the master engineering tracking specification for the development lifecycle of **MFGOS (Configurable Manufacturing Operations System)**. Every week outlines concrete objectives, technical deliverables, and a short summary of accomplishments.
 
 ---
 
@@ -10,24 +10,24 @@ This document serves as the master tracking specification for the 4-month (16-we
 ┌────────────────────────────────────────────────────────────────────────┐
 │                        MFGOS 16-WEEK TIMELINE                          │
 ├─────────────────┬──────────────────┬─────────────────┬─────────────────┤
-│    MONTH 1      │     MONTH 2      │     MONTH 3     │     MONTH 4     │
+│     PHASE 1     │     PHASE 2      │     PHASE 3     │     PHASE 4     │
 │ (WEEKS 01 - 04) │ (WEEKS 05 - 08)  │ (WEEKS 09 - 12) │ (WEEKS 13 - 16) │
 ├─────────────────┼──────────────────┼─────────────────┼─────────────────┤
 │ Foundation,     │ Manufacturing    │ Configurability │ Analytics,      │
-│ Schema, Auth &  │ Core, BOM &      │ Engine & Mobile │ Testing, QA &   │
-│ Master Data,    │ Production Order │ Offline Sync    │ Viva Submission │
-│ Stock Ledger    │ Execution        │                 │                 │
+│ Schema, Auth &  │ Core, BOM &      │ Engine & Mobile │ Hardening, QA & │
+│ Master Data,    │ Production Order │ Offline Sync    │ Production      │
+│ Stock Ledger    │ Execution        │                 │ Deployment      │
 └─────────────────┴──────────────────┴─────────────────┴─────────────────┘
 ```
 
 ---
 
-## Month 1: Foundation, Security & Operational Master Data
+## Phase 1: Foundation, Security & Operational Master Data
 
 ### Week 01: System Specifications, Architecture & Project Scaffolding
-- **Milestone:** Project Blueprint & Foundation Setup
+- **Milestone:** Architecture & Foundation Setup
 - **Objectives:**
-  - Establish complete Software Requirements Specification (SRS) following IEEE guidelines.
+  - Establish Software Requirements Specification (SRS) following IEEE standards.
   - Architect system topology: Monorepo structure, data isolation model, and API contracts.
   - Formulate database ER diagram and relational constraints.
   - Initialize Git repository with branch policies, `.gitignore`, and CI/CD foundations.
@@ -41,7 +41,7 @@ This document serves as the master tracking specification for the 4-month (16-we
 ---
 
 ### Week 02: Multi-Tenant Schema, Supabase Auth & Role-Based Access Control (RBAC)
-- **Milestone:** Secure Foundation & Identity Management
+- **Milestone:** Multi-Tenant Identity & Access Management
 - **Objectives:**
   - Author and apply PostgreSQL migrations for organizations, plants, user profiles, roles, and permissions.
   - Implement Row-Level Security (RLS) policies ensuring tenant and organization isolation.
@@ -57,7 +57,7 @@ This document serves as the master tracking specification for the 4-month (16-we
 ---
 
 ### Week 03: Master Data Management (MDM) Engine
-- **Milestone:** Foundational Manufacturing Entities
+- **Milestone:** Foundational Manufacturing Catalog
 - **Objectives:**
   - Implement CRUD interfaces and database contracts for:
     - Products (Finished Goods) and Raw Materials with SKU, specifications, and barcode generation.
@@ -75,7 +75,7 @@ This document serves as the master tracking specification for the 4-month (16-we
 
 ---
 
-### Week 04: Inventory Engine, Stock Movement Ledger & Initial Operations Dashboard
+### Week 04: Inventory Engine, Stock Movement Ledger & Central Dashboard
 - **Milestone:** Transaction-Auditable Inventory Ledger
 - **Objectives:**
   - Implement immutable stock movement ledger: receipts, issues, transfers, and adjustments.
@@ -93,7 +93,7 @@ This document serves as the master tracking specification for the 4-month (16-we
 
 ---
 
-## Month 2: Manufacturing Core & Production Lifecycle
+## Phase 2: Manufacturing Core & Production Lifecycle
 
 ### Week 05: Bill of Materials (BOM) & Material Explosion Engine
 - **Milestone:** Product Engineering & Recipe Management
@@ -152,10 +152,10 @@ This document serves as the master tracking specification for the 4-month (16-we
 
 ---
 
-## Month 3: Configurability Engine & Mobile Offline Operations
+## Phase 3: Configurability Engine & Mobile Offline Operations
 
 ### Week 09: Configurable Workflow State Machine
-- **Milestone:** The Core Differentiator: Dynamic Process Engine
+- **Milestone:** Dynamic Process Engine
 - **Objectives:**
   - Design the metadata-driven workflow engine storing stages, transition rules, and required roles in the database.
   - Implement the Administrative Visual Workflow Builder (customizing stages for Textile, Furniture, or Precision Engineering).
@@ -210,13 +210,13 @@ This document serves as the master tracking specification for the 4-month (16-we
 
 ---
 
-## Month 4: Analytics, AI Insights, Hardening & Academic Submission
+## Phase 4: Analytics, AI Insights, Hardening & Deployment
 
 ### Week 13: Executive Analytics & Operational Reporting
 - **Milestone:** Decision Intelligence & Metrics
 - **Objectives:**
   - Build interactive charts using Recharts for production throughput, Overall Equipment Effectiveness (OEE) approximation, and scrap rates.
-  - Generate PDF/CSV exportable reports for inventory valuations, supplier receipt ledgers, and order completion histories.
+  - Generate exportable reports for inventory valuations, supplier receipt ledgers, and order completion histories.
   - Implement customizable date-range filtering and plant comparison views.
 - **Deliverables:**
   - Executive Analytics dashboard in Web App.
@@ -255,27 +255,27 @@ This document serves as the master tracking specification for the 4-month (16-we
 
 ---
 
-### Week 16: Deployment, Final Documentation & Viva Defense Package
-- **Milestone:** Production Deployment & Project Submission
+### Week 16: Deployment, Final Documentation & Production Release
+- **Milestone:** Production Deployment & General Availability
 - **Objectives:**
   - Deploy Web Application to Vercel and Supabase cloud instance.
-  - Build Flutter production APK / release bundle.
-  - Complete the comprehensive Major Project Report (100+ pages covering SRS, ERD, DFDs, Test Cases, and Viva Q&A).
-  - Prepare high-impact Viva presentation slide deck and backup 4K demonstration video walkthrough.
+  - Build Flutter production release bundle.
+  - Complete the comprehensive System Administration & Developer documentation.
+  - Prepare high-impact demonstration walkthrough video and operational scenario playbook.
 - **Deliverables:**
-  - Live production web deployment link and downloadable Flutter APK.
-  - Final Academic Project Report (`MFGOS_Final_Report.pdf`) and Presentation Deck.
-  - Dual-industry live viva demonstration script (Machining vs. Furniture).
+  - Live production web deployment link and downloadable Flutter release build.
+  - Technical Architecture Specification and API references.
+  - Dual-industry live demonstration scenario (Machining vs. Furniture).
 - **Crisp Weekly Summary:**
-  > *Week 16 finalized the production deployments, compiled the complete academic dissertation and viva presentation deck, and verified the dual-industry live demonstration workflow for final-year defense.*
+  > *Week 16 finalized the production deployments, compiled the complete system documentation package, and verified the dual-industry operational demonstration workflow.*
 
 ---
 
 ## Current Status Summary (End of Week 4)
 
-| Week Range | Focus Area | Status |
+| Phase | Focus Area | Status |
 | :--- | :--- | :--- |
 | **Weeks 01 - 04** | Foundation, Security, Master Data & Stock Ledger | **COMPLETED & OPERATIONAL** |
-| **Weeks 05 - 08** | Manufacturing Core, BOM, Routing & WIP Orders | **SCHEDULED (Month 2)** |
-| **Weeks 09 - 12** | Configurable Workflow Engine & Mobile Offline Sync | **SCHEDULED (Month 3)** |
-| **Weeks 13 - 16** | Analytics, AI Insights, Testing & Final Viva Defense | **SCHEDULED (Month 4)** |
+| **Weeks 05 - 08** | Manufacturing Core, BOM, Routing & WIP Orders | **SCHEDULED (Phase 2)** |
+| **Weeks 09 - 12** | Configurable Workflow Engine & Mobile Offline Sync | **SCHEDULED (Phase 3)** |
+| **Weeks 13 - 16** | Analytics, AI Insights, Testing & Production Release | **SCHEDULED (Phase 4)** |

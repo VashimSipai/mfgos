@@ -6,7 +6,7 @@ MFGOS implements a rigorous multi-tier testing strategy to ensure that business-
 ```mermaid
 graph TD
     subgraph "Testing Pyramid"
-        E2E["End-to-End Scenarios (Viva Demo Flow)"]
+        E2E["End-to-End Scenarios (System Validation)"]
         Int["Integration & RLS Security Tests"]
         Unit["Unit Tests (Logic, Conversions, FSM Rules)"]
     end
@@ -50,7 +50,7 @@ graph TD
 
 ---
 
-## 3. Academic Viva Demonstration Script (Step-by-Step)
+## 3. End-to-End Operational Validation Script (Step-by-Step)
 1. **Login & Role Showcase:** Log in as Super Admin; display organization and multi-plant switcher.
 2. **Master Data Verification:** Demonstrate Industrial Gear item, raw materials (Steel, Bearings, Bolts), and Work Centers (CNC Lathe 1, Milling 2).
 3. **Inventory Receipt:** Receive 500 kg Alloy Steel into Raw Materials Warehouse; observe real-time ledger update and KPI dashboard badge.
